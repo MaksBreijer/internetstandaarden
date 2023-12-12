@@ -9,10 +9,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(10, 103, 243); /* Achtergrondkleur van je header */
-    color: rgb(255, 255, 255); /* Tekstkleur van je header */
-   padding: 10px 20px 40px 5px; /* Optioneel: voeg wat padding toe aan je header */
-    z-index: 1000; /* Zorg ervoor dat de header boven andere elementen staat */
+    background-color: rgb(10, 103, 243); 
+    color: rgb(255, 255, 255); 
+   padding: 0.625em 1.25em 2.5em 0.313em; 
+    z-index: 1000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
@@ -22,11 +22,10 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Maak de lijst horizontaal */
+    display: flex; 
 }
-
 .horizontal-list li {
-    margin-right: 20px; /* Voeg wat ruimte tussen de items toe */
+    margin-right: 1.25em; 
 }
 
 .horizontal-list a {
@@ -40,8 +39,7 @@ body {
 }
 
 .content {
-    /* Voeg wat bovenmarge toe aan je inhoud om te voorkomen dat het achter de header verdwijnt */
-    margin-top: 70px; /* Pas deze waarde aan op basis van de hoogte van je header en eventuele extra padding */
+    margin-top: 4.375em; 
 }
 
 .textblok {
@@ -53,22 +51,27 @@ body {
     color: #ffffff;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 text-align: center;
-padding: 26px;
+padding: 1.625em;
 }
 
  texth2 { 
     font-size: large;
 }
 
-button {
+.button {
+    display: inline-block;
 font-size: larger;
 background-color: #ffffff;
+padding: 0.313em;
 color: #0a67f3;
 font-style: oblique;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+.button a {
+text-decoration: none;
+color: #0a67f3;
+}
 
 h2 {
     font-weight: bold;
@@ -81,7 +84,7 @@ h2 {
 }
 
 .content { 
-margin-top: -30px;
+margin-top: -1.875em
 }
 
 
@@ -92,7 +95,7 @@ margin-top: -30px;
 }
 
 .plaatjerechts{ 
-    margin-right: 200px;
+    margin-right: 12.5em;
 }
 
 * {
@@ -108,8 +111,8 @@ margin-top: -30px;
   .column {
     float: right;
     width: 50%;
-    padding: 0px;
-    height: 300px; 
+    padding: -2em;
+    height: 28.55em; 
     color: #ffffff;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -128,15 +131,46 @@ img.column2 {
     height: auto;
   }
 
+
+
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column3 {
+    float: right;
+    width: 50%;
+    padding: -2em;
+    height: 40em; 
+    color: #ffffff;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  
+  .prijslijst {
+    border-style: solid; color: #0a67f3;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+img.column3 {
+    width: auto;
+    height: auto;
+  }
+
+
   footer{
 background-color: rgb(73, 70, 70);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: #ffffff;
--ms-text-combine-horizontal: all;
-
   }
 
-  @media (max-witdh: 840px) {
-    .textblok { height: max-content;}
-  }
-
+footer a{
+text-decoration: none;
+color: #ffffff;
+}
+  
