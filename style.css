@@ -5,7 +5,7 @@ body {
 }
 
 
-.fixed-header {
+header {
     top: 0;
     left: 0;
     width: 100%;
@@ -14,229 +14,139 @@ body {
    padding: 0.625em 1.25em 2.5em 0.313em; 
     z-index: 1000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    width: auto;
 }
 
-
-.horizontal-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; 
-}
-.horizontal-list li {
-    margin-right: 1.25em; 
+header h1 {
+  justify-content: center;
+  display: flex;
 }
 
-.horizontal-list a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+header ul {
+  flex-direction: row ;
+  justify-content: center;
+  display: flex;
+  font-size: larger;
+  list-style: none;
+
+  padding:0em;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
 }
 
-.horizontal-list a:hover {
-    color: #ccc;
+header li {
+  padding: 2%;
 }
 
-.content {
-    margin-top: 4.375em; 
+header li :hover{
+  color: #787c82;
 }
 
-.content2 {
-  margin-top:2em; 
-  background-color: #ffffff;
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bergachtergrond {
+  background-image:url(images/maks\ wax\ berg.jpg); 
+  background-repeat:no-repeat;
+  background-size: 100%;
   width: 100%;
-  height: 100%;
-  
-}
-
-.textblok {
-   height: 21.875em;
-    background-image:url(images/maks\ wax\ berg.jpg); 
-    background-repeat:no-repeat;
-    background-size: 150%;
-    background-position: center;
-    color: #ffffff;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-text-align: center;
-padding: 2cap;
-}
-
-.textblok {
-  max-width: 100%;
-  height: auto;
-}
-
-.textblok2 {
-  height: 21.875em;
-   background-image:url(images/maks\ wax\ berg.jpg); 
-   background-repeat:no-repeat;
-   background-size: 5%;
-   background-position: center;
-   color: #ffffff;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-text-align: center;
-padding: 2cap;
-
-
-.textblok2{
- max-width: 100%;
- height: auto;
-}
+  padding: 3em 1em 3em 1em  ;
+  background-position: center;
+  width: auto;
 
 }
 
- texth2 { 
-    font-size: large;
+
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  font-size: larger;
+ padding: 2%;
+}
+section h2 {
+  justify-content: center;
+flex-direction: row;
+  display: flex;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.button {
-    display: inline-block;
-font-size: larger;
-background-color: #ffffff;
-padding: 0.313em;
-color: #0a67f3;
-font-style: oblique;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.button a {
-text-decoration: none;
-color: #0a67f3;
-}
-
-.button2 {
-  display: inline-block;
-font-size: larger;
-background-color: #ffffff;
-padding: 0.313em;
-color: #0a67f3;
-font-style: oblique;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.button2 a {
-text-decoration: none;
-color: #0a67f3;
-}
-
-
-h2 {
-    font-weight: bold;
+section p {
+  justify-content: center;
+    display: flex;
+    padding: 2%;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: larger;
+ column-fill: balance;
+ padding-top: 2%;
+  }
+
+
+section a {
+padding: 1%;
+  margin-left: 47%;
+  background-color: #ffffff;
+  color: #0a67f3;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+article h2{
+  justify-content: center;
+  display: flex;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.voordeelgeslpenski {
-    padding: 10%;
+article{
+  padding-left: 2%;
+  flex-direction: row;
 }
 
-.content { 
-margin-top: -1.875em
+article li {
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
 }
 
-
-.sstrijkijzer {
-    margin-left: auto;
-    margin-right: auto;
-    display:block
+article{
+ align-items: right;
+ padding-top: 2%;
 }
 
-.plaatjerechts{ 
-    margin-right: 12.5em;
+h4{
+  color: #ffffff;
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 2%;
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.bronnenlijst a{
+  color: #ffffff;
+  background: none;
+margin-left: auto;
 
-  .column {
-    float: right;
-    width: 50%;
-    padding: -2em;
-    height: 30%; 
-    color: #ffffff;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-  }
-  
-  
-  .container {
-    border-style: solid; color: #0a67f3;
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-img.column2 {
-    width: 80%;
-    height: 800%;
-  }
-
-
-
-  .row2:after {
-    display: table;
-    clear: both;
-  }
-
-  .column3 {
-    float: right;
-    width: 50%;
-    padding: -2em;
-    height: 40em; 
-    color: #ffffff;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-  }
-  
-  .prijslijst {
-    border-style: solid; color: #0a67f3;
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-img.column3 {
-    width: auto;
-    height: auto;
-  }
-
-  .row4:after {
-    content: "";
-    display: table;
-    clear: both;
-    min-height: 10em;
-  }
-
-  .column4 {
-    float: center;
-    width: 50%;
-    padding: -2em;
-    height: 30%; 
-    color: #ffffff;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-
-  footer{
-background-color: rgb(73, 70, 70);
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+footer{
+background-color: #787c82;
 color: #ffffff;
-padding: 1em 2em 3em 11em;
-
-  }
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+width: auto;
+}
 
 footer a{
-text-decoration: none;
 color: #ffffff;
 }
-  
+
+footer :hover{
+color: #0a67f3;
+}
